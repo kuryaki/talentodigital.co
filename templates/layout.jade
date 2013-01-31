@@ -15,6 +15,8 @@ html(lang='en')
         link(rel='stylesheet', href='/css/5grid/core-noscript.css')
         link(rel='stylesheet', href='/css/style.css')
         link(rel='stylesheet', href='/css/style-desktop.css')
+      link(rel='stylesheet', href='/css/bootstrap.css')
+      link(rel='stylesheet', href='/css/bootstrap-responsive.css')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
 
   body
@@ -26,9 +28,11 @@ html(lang='en')
             h1
               a.mobileUI-site-name(href='#') Primer Foro de Talento Digital
             nav#nav.mobileUI-site-nav
-              a(href='#features-wrapper') Acerca de
-              a(href='#') Inscripci&oacute;n
-              a(href='#') Apoyado por
+              a(href='#features-wrapper') Motivaci&oacute;n
+              a(href='#panel') Panel
+              a(href='#foro') Foro
+              a(href='#registro') Registro
+              a(href='#patrocina') Patrocina
             div.sharethis
               span.st_email_hcount(displayText='Email')
               span.st_facebook_hcount(displayText='Facebook')
@@ -39,13 +43,12 @@ html(lang='en')
           div.row
             div.6u
               :markdown
-                En la era de la informaci&oacute;n y la tecnolog&iacute;a son nuevas las habilidades
-                que se requieren, ¿Est&aacute; el pa&iacute;s preparado para la nueva era digital?
+                ¿Por qu&eacute; es tan dificil encontrar buenos desarrolladores de software?
 
-              a.button-big(href='#') Inscribete!
+              a.button-big(href='#registro') Inscribete!
             div.6u
-              a.bordered-feature-image(href='#')
-                img(src='images/talent.jpg', alt='')
+              a.bordered-feature-image(href='#features-wrapper')
+                img(src='images/img-foro.png', alt='')
 
     block content
 
